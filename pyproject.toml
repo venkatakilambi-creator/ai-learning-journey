@@ -1,0 +1,23 @@
+[project]
+name = "project1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "venkata kilambi" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.4.3",
+    "langchain-anthropic>=1.7.5",
+    "langchain-openai>=1.6.7",
+    "langgraph>=1.2.14",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+project1 = "project1:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
