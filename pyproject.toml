@@ -1,0 +1,33 @@
+[project]
+name = "tax-box-allocation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "venkata kilambi" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "chromadb>=1.5.9",
+    "google-api-core>=2.42.0",
+    "langchain>=1.4.6",
+    "langchain-anthropic>=1.7.6",
+    "langchain-classic>=1.0.8",
+    "langchain-community>=0.4.2",
+    "langchain-google-genai>=4.4.2",
+    "langchain-openai>=1.7.2",
+    "langchain-tavily>=0.2.18",
+    "pymupdf>=1.28.2",
+    "python-dotenv>=1.2.4",
+    "sentence-transformers>=6.1.0",
+    "streamlit>=1.66.0",
+    "tavily-python>=0.8.5",
+    "youtube-transcript-api>=1.2.4",
+]
+
+[project.scripts]
+tax-box-allocation = "tax_box_allocation:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"

@@ -1,0 +1,16 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.env
+
+# Ignore your private data folder and local Chroma DB files
+data/
+oracle_tax_db/
+processed_files.txt
